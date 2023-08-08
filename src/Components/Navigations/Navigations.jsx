@@ -11,7 +11,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
+import logoType from './logo.png'
 
 const pages = ['Home', 'Movies', 'TV Shows'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -42,8 +42,8 @@ function Navigation() {
 
         <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-               <img src="./Components/Navigations/logo.png" alt="Watchit" />
+              <IconButton >
+               <img src={logoType} alt="Watchit" style={{width:"200px", height:"60px"}}/>
               </IconButton>
             </Tooltip>
   
